@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Library System</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<style>
+    body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    background-color: #5352ED;
+
+}
+
+.container {
+    width: 500px;
+    margin: 30px auto;
+}
+
+.card {
+    background: #fff;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2);
+    margin-bottom: 20px;
+    transition: 0.3s;
+}
+
+.card:hover {
+    transform: scale(1.02);
+}
+
+label {
+    font-weight: bold;
+    margin-top: 10px;
+    display: block;
+}
+
+input,
+select,
+textarea {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+    border-radius: 10px;
+    border: 1px solid #ccc;
+}
+
+textarea {
+    resize: none;
+    height: 60px;
+}
+
+.books label {
+    font-weight: normal;
+    display: block;
+    margin: 5px 0;
+}
+
+.books input {
+    width: auto;
+    margin-right: 8px;
+}
+
+.btn {
+    width: 100%;
+    margin-top: 15px;
+    padding: 10px;
+    border: none;
+    color: white;
+    font-size: 16px;
+    border-radius: 10px;
+    cursor: pointer;
+    background: #F67951;
+}
+
+.btn:hover {
+    background: #5352ED;
+}
+
+.title {
+    text-align: center;
+    font-size: 22px;
+    margin-bottom: 10px;
+    background: #F67951;
+    color: white;
+    border-radius: 10px;
+
+
+}
+
+.error {
+    color: red;
+    font-size: 13px;
+    display: none;
+}
+
+input[type="checkbox"]:required:invalid~.error {
+    display: block;
+}
+
+.button {
+    background: #F67951;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 25px;
+    text-decoration: none;
+}
+
+.center {
+    text-align: center;
+    margin-top: 100px;
+    background-color: #5352ED;
+}
+</style>
+
+<body>
+
+<div class="container">
+
+    <!-- 📚 Book Issue Form -->
+    <div class="card">
+        <div class="title">📚 Book Issue Form</div>
+
+        <form>
+
+            <label>Full Name</label>
+            <input type="text" required>
+
+            <label>Student ID</label>
+            <input type="text" required>
+
+            <!-- ✅ Address Added -->
+            <label>Your Address</label>
+            <textarea placeholder="Enter your full address" required></textarea>
+
+            <label>Department</label>
+            <select required>
+                <option value="">Select Department</option>
+                <option>CST</option>
+                <option>EEE</option>
+                <option>CMT</option>
+                <option>CIVIL</option>
+                <option>EMT</option>
+            </select>
+
+            <label>Semester</label>
+            <select required>
+                <option value="">Select Semester</option>
+                <option>1st</option>
+                <option>2nd</option>
+                <option>3rd</option>
+                <option>4th</option>
+                <option>5th</option>
+                <option>6th</option>
+                <option>7th</option>
+                <option>8th</option>
+            </select>
+            <label>Write the book name</label>
+            <input type="text" required>
+         
+
+         
+
+            <label>Issue Date</label>
+            <input type="date" required>
+
+            <label>Return Date</label>
+            <input type="date" required>
+
+            <button type="submit" class="btn">Issue Book</button>
+
+        </form>
+    </div>
+
+    <!-- 🔄 Book Return Form -->
+    <div class="card">
+        <div class="title">🔄 Book Return Form</div>
+
+        <form>
+
+            <label>Student ID</label>
+            <input type="text" required>
+            <label>Write the book name</label>
+            <input type="text" required>
+         
+
+          
+            <label>Return Date</label>
+            <input type="date" required>
+
+            <button type="submit" class="btn">Return Book</button>
+
+        </form>
+    </div>
+
+</div>
+
+</body>
+</html>
