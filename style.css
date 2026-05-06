@@ -1,4 +1,187 @@
+/*sabrina start  */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
 
+body {
+    background-color: rgb(233, 233, 249);
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: white;
+    padding: 5px 50px;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+
+}
+.logo img {
+
+    height: 20px;
+    width: 20px;
+
+}
+
+
+.highlight {
+    color: rgb(137, 51, 217);
+    font-family: serif;
+    font-weight: bold;
+
+}
+
+nav a {
+    margin: 0 10px;
+    text-decoration: none;
+    color: gray;
+}
+
+.home {
+    color: #000;
+    font-weight: bold;
+}
+.search-box {
+    display: flex;
+    align-items: center;
+    background: #eee;
+    border-radius: 10px;
+    padding: 8px 12px;
+    width: 250px;
+
+}
+
+.search-box i {
+    color: #000;
+    font-size: 16px;
+    margin-right: 8px;
+
+}
+
+.search-box input {
+    border: none;
+    outline: none;
+    background: transparent;
+    font-size: 14px;
+    width: 100%;
+
+}
+
+.bell {
+    height: 20px;
+    vertical-align: middle;
+    cursor: pointer;
+
+}
+
+
+.login {
+    text-decoration: none;
+    color: rgb(137, 51, 217);
+
+}
+
+.signup {
+    background: rgb(239, 110, 63);
+    color: white;
+    border: none;
+    padding: 8px 15px;
+    border-radius: 5px;
+}
+
+.main {
+
+    justify-content: space-between;
+    padding: 50px;
+
+}
+.text {
+    width: 100%;
+    max-width: 800px;
+
+}
+
+.small {
+    color: grey;
+}
+
+.text h1 {
+    color: rgb(99, 29, 164);
+    margin: 10px 0;
+    white-space: nowrap;
+}
+
+.text p {
+    margin: 10px 0;
+    font-size: small;
+
+}
+
+.start {
+    margin-top: 20px;
+
+    background: rgb(239, 110, 63);
+    color: white;
+    padding: 12px;
+    border: none;
+    border-radius: 5px;
+    padding-left: 35px;
+    padding-right: 35px;
+}
+
+.full {
+    justify-content: space-between;
+    align-items: center;
+    display: flex;
+}
+
+
+.book {
+    width: 35%;
+    text-align: center;
+    flex: 0 0 30%;
+
+}
+.book img {
+    width: 100%;
+
+    width: 450px;
+    height: 550px;
+    mix-blend-mode: multiply;
+
+
+}
+
+.address {
+    margin-top: 20px;
+}
+
+.address h3 {
+    color: rgb(99, 29, 164);
+    margin-bottom: 10px;
+
+}
+
+.address p {
+    color: grey;
+    margin-bottom: 10px;
+}
+
+.icon {
+    display: flex;
+    gap: 20px;
+    height: 20px;
+    margin-top: 20px;
+}
+/* sabrina end */
 /* Akhi start */
 body {
     font-family: Arial, sans-serif;
